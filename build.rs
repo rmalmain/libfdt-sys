@@ -40,6 +40,7 @@ fn main() {
     let bindings = bindgen::Builder::default()
         .header("libfdt/libfdt/libfdt.h")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
+        .clang_arg("-Ilibfdt/libfdt")
         .generate()
         .expect("Unable to generate bindings");
 

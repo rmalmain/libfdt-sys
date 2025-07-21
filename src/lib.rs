@@ -4,5 +4,6 @@
 #![allow(unused)]
 #![allow(unsafe_op_in_unsafe_fn)]
 #![allow(clippy::missing_safety_doc)]
+#![allow(improper_ctypes)]
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
